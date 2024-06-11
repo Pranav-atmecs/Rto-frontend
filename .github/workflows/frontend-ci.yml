@@ -31,3 +31,7 @@ jobs:
 
         - name: Build frontend
           run: npm run build
+        -  name: Deploy backend
+           if: github.ref == 'refs/heads/main'
+           run: |
+            echo "Deploying backend..."  
