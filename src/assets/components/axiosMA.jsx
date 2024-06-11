@@ -76,7 +76,6 @@ export async function getAdminDetails() {
     throw error;
   }
 }
-=======
 export async function addPermanentAdd(permanentAdd) {
   try {
     const response = await axios.post(`${SERVER_URL}/address/permanent/${sessionStorage.getItem("id")}`, permanentAdd);
